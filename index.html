@@ -59,7 +59,7 @@
     <!-- About me --> 
     <!-- CSS로 공통적으로 묶을예정이기 때문에 Class를 안씀 -->
     <!-- 설명란(ex: h1,h2,p 등) -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
         <h1>About Me</h1>
         <p>자기소개 쓰기(나를 잘어필할수있는 문장 ,2~3문장</p>
         <div class="about__majors">
@@ -125,89 +125,96 @@
 
     <!-- Skills --> 
     <section id="skills" class="section">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-            스킬에 대한 부가설명을 쓰시오
-        </p>
-        <!-- 박스구조 파악! -->
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">skills</h3>
-                <!-- HTML -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                스킬에 대한 부가설명을 쓰시오
+            </p>
+            <!-- 박스구조 파악! -->
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">skills</h3>
+                    <!-- HTML -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"
+                            style="width: 99%;"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <!-- CSS -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"
+                            style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <!-- JS -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"
+                            style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <!-- React -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"
+                            style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <!-- 등등 -->
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value"></div>
+                        </div>
+                    </div>          
+                </div>
+    
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>visual Studio Code</span></li>
+                            <li><span>등</span></li>
+                            <li><span>등</span></li>
+                            <li><span>등</span></li>
+                            <li><span>등</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>git</span></li>
+                            <li><span>git</span></li>
+                            <li><span>git</span></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- CSS -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <!-- JS -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <!-- React -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <!-- 등등 -->
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>99%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>          
             </div>
-
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>visual Studio Code</span></li>
-                        <li><span>등</span></li>
-                        <li><span>등</span></li>
-                        <li><span>등</span></li>
-                        <li><span>등</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>git</span></li>
-                        <li><span>git</span></li>
-                        <li><span>git</span></li>
-                    </ul>
-                </div>
-            </div>
+        </section>
         </div>
-    </section>
+        
 
     <!-- Work --> 
     <section id="work" class="section">
