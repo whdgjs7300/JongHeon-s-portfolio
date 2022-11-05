@@ -59,18 +59,19 @@
     <!-- About me --> 
     <!-- CSS로 공통적으로 묶을예정이기 때문에 Class를 안씀 -->
     <!-- 설명란(ex: h1,h2,p 등) -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About Me</h1>
         <p>자기소개 쓰기(나를 잘어필할수있는 문장 ,2~3문장</p>
         <div class="about__majors">
             <!-- HTML,CSS -->
             <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-html5"></i>
+                <div class="major__icon" >
+                    <i class="fa-brands fa-html5" 
+                    id="html"></i>
                 </div>
-                <div class="major__title">
-                    HTML5 <br> CSS3
-                </div>
+                <h2 class="major__title">
+                    HTML5-CSS3
+                </h2>
                 <div class="major__description">
                     HTML을 이용하여 000할수있다 <br>
                     CSS를 이용하여 000 할수있다
@@ -79,11 +80,12 @@
             <!-- Js  -->
             <div class="major">
                 <div class="major__icon">
-                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-js"
+                    id="js"></i>
                 </div>
-                <div class="major__title">
+                <h2 class="major__title">
                     javaScript
-                </div>
+                </h2>
                 <div class="major__description">
                     javaScript를 이용하여 000 할수있다
                 </div>
@@ -91,11 +93,12 @@
             <!-- react -->
             <div class="major">
                 <div class="major__icon">
-                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-react"
+                    id="react"></i>
                 </div>
-                <div class="major__title">
+                <h2 class="major__title">
                     react
-                </div>
+                </h2>
                 <div class="major__description">
                     react를 이용하여 000 할수있다
                 </div>
@@ -105,16 +108,23 @@
         <div class="about__jobs"> 
             <div class="job">
                 <!-- 학원 로고 -->
-                <img src="" alt="Green" class="job__logo">
+                <img src="./imgs/common.jpeg" alt="Green" class="job__logo">
+                <div>
+                    <p class="job__name">
+                        리액트를 활용한 프론트엔드 개발수업 수료 
+                        -그린컴퓨터 아카데미 부산 서면2별관
+                    </p>
+                    <p class="job__period">
+                        2022 7/30 ~ 2023 1/28
+                    </p>
+                </div>
             </div>
-            <div class="job">
-                <img src="" alt="" class="job__logo">
-            </div>
+            
         </div>
     </section>
 
     <!-- Skills --> 
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
@@ -200,7 +210,7 @@
     </section>
 
     <!-- Work --> 
-    <section id="work">
+    <section id="work" class="section">
         <h1>My Work</h1> 
         <h3>projects</h3>
         <div class="work__categories">
@@ -250,7 +260,7 @@
     </section>
     
     <!-- Testimonials --> 
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
@@ -272,7 +282,7 @@
     </section>
 
     <!-- Contact --> 
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">whdgjs7300@naver.com</h2>
         <div class="contact__links">
