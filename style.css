@@ -123,6 +123,15 @@
         
     }
 
+    .navbar__toggle-btn {
+        position: absolute;
+        right: 32px;
+        top: 24px;
+        font-size: 24px;
+        color: var(--color-white);
+        display: none; 
+    }
+
     /* Home */
 
     #home {
@@ -214,6 +223,7 @@
 
     .major__description {
         font-size: var(--font-small);
+        
     }
     
 
@@ -422,4 +432,35 @@
         width: 45px;
         height: 35px;
     }
+    
+    @media screen and (max-width: 768px) {
+        .navbar__toggle-btn {
+            display: block;
+        }
+        #navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .navbar__menu {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            display: none;
+        }
+
+        .about__majors {
+            flex-direction: column;
+        }
+        .major {
+            margin-bottom: 38px;
+        }
+        .skillset {
+            flex-direction: column;
+        }
+        .project {
+            /* 화면을 메꿔주는 역할 */
+            flex-grow: 1;
+        }
+    } 
+        
     
