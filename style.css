@@ -52,9 +52,10 @@
     }
 
     button {
+        /* transparent 배경색을 투명으로함 */
         background-color: transparent;
         cursor: pointer;
-        border: none;
+        border: none; 
         outline: none;
     }
     
@@ -128,13 +129,14 @@
         right: 32px;
         top: 24px;
         font-size: 24px;
-        color: var(--color-white);
+        color: var(--color-white); 
         display: none; 
     }
 
     /* Home */
 
     #home {
+        /* no-repeat 이미지를 반복시키지않음 */
         background: url("imgs/헤드백그라운드.png") center/cover no-repeat;
         padding: 40px;
         text-align: center;
@@ -267,6 +269,7 @@
     }
 
     .skillset__left {
+        /* basis 기본설정값(colume 일땐 height값 */
         flex-basis:  60%;
         background-color: var(--color-dark-grey);
         padding: 20px 40px;
@@ -415,6 +418,11 @@
     .contact__links {
         font-size: var(--font-large);
         margin: 24px 0;
+        
+        
+    }
+    .contact__links i{
+        color: var(--color-black);
     }
 
     .contact__links i,
@@ -425,7 +433,7 @@
     .contact__links i:hover,
     .contact__links img:hover{
         transform: scale(1.2);
-        color: var(--color-black);
+        
     }
 
     .contact__links img {
