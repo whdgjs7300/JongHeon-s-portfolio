@@ -90,12 +90,20 @@
     }
     /* Navbar */
     #navbar {
+        position: fixed;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        background-color: var(--color-blue);
+        background-color: transparent;
         align-items: center;
-        color: var(--color-white);
         padding: 16px;
+        color: var(--color-white);
+        transition: all 300ms ease-in-out;
+    }
+
+    #navbar.navbar--dark {
+        background-color: var(--color-blue);
+        padding: 8px;
     }
 
     .navbar__menu {
@@ -139,6 +147,7 @@
         /* no-repeat 이미지를 반복시키지않음 */
         background: url("imgs/헤드백그라운드.png") center/cover no-repeat;
         padding: 40px;
+        padding-top: 120px;
         text-align: center;
     }
 
