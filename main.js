@@ -37,7 +37,20 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1-window.scrollY / homeHeight;
 })
 
+// 버튼 올리기 -스크롤시
+const arrowUp = document.querySelector('.arrow-up')
+document.addEventListener('scroll', ()=>{
+    if(window.scrollY > homeHeight /2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
 
+// arrow up - click
+arrowUp.addEventListener('click', ()=> {
+    scrollIntoView('#home')
+})
 
 
 // 스크롤 함수설정
