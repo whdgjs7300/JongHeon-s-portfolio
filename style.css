@@ -99,6 +99,8 @@
         padding: 16px;
         color: var(--color-white);
         transition: all 300ms ease-in-out;
+        /* navbar 제일위에 항상고정 */
+        z-index: 1;
     }
 
     #navbar.navbar--dark {
