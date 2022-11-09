@@ -6,7 +6,6 @@ const navbarHeight = navbar.getBoundingClientRect().height;
 
 
 document.addEventListener('scroll', () => {
-    console.log(window.scrollY);
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
     } else {
@@ -17,12 +16,10 @@ document.addEventListener('scroll', () => {
 // Navbar menu 클릭시 스크롤링 
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener("click", (e) => {
-    const target = e.target;
-    const link = target.dataset.link;
+    const link = e.target.dataset.link;
     if (link == null) {
         return;
     }
-    
     scrollIntoView(link);
 })
 // Contact 버튼을 클릭 시 링크로 이동
@@ -31,8 +28,22 @@ const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', ()=> {
     scrollIntoView('#contact')
 });
+
+// Home 화면을 스크롤 했을 때 점점 투명해짐
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1-window.scrollY / homeHeight;
+})
+
+
+
+
 // 스크롤 함수설정
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
 } 
+
+
