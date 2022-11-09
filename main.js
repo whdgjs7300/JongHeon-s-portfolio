@@ -14,7 +14,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
-// 핸들 스크롤링 
+// Navbar menu 클릭시 스크롤링 
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener("click", (e) => {
     const target = e.target;
@@ -23,6 +23,16 @@ navbarMenu.addEventListener("click", (e) => {
         return;
     }
     
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth"});
+    scrollIntoView(link);
 })
+// Contact 버튼을 클릭 시 링크로 이동
+
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click', ()=> {
+    scrollIntoView('#contact')
+});
+// 스크롤 함수설정
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: "smooth"});
+} 
