@@ -13,6 +13,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
+
 // Navbar menu 클릭시 스크롤링 
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener("click", (e) => {
@@ -20,8 +21,17 @@ navbarMenu.addEventListener("click", (e) => {
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link); 
     })
+
+// Navbar Toggle button 반응형 화면 출력
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',() => {
+    navbarMenu.classList.toggle('open');
+})
+
+
 // Contact 버튼을 클릭 시 링크로 이동
 
 const homeContactBtn = document.querySelector('.home__contact');
@@ -63,9 +73,10 @@ workBtnContainer.addEventListener('click', (e) => {
     if(filter == null) {
         return;
     }
-
+    // 클릭했을 때 카테고리 버튼 하나만 설정
     const active = document.querySelector('.category__btn.selected');
     active.classList.remove('selected');
+    // e.target이 숫자를 눌렀을 때 span태그가 되어서 부모노드(버튼)로 지정
     const target = e.target.nodeName === 'BUTTON' ? e.target :
                     e.target.parentNode;
     target.classList.add('selected');
@@ -84,6 +95,7 @@ workBtnContainer.addEventListener('click', (e) => {
     },300);
     
 });
+
 
 // 스크롤 함수설정
 function scrollIntoView(selector) {
