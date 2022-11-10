@@ -63,6 +63,13 @@ workBtnContainer.addEventListener('click', (e) => {
     if(filter == null) {
         return;
     }
+
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === 'BUTTON' ? e.target :
+                    e.target.parentNode;
+    target.classList.add('selected');
+
     projectContainer.classList.add('anim-out');
     setTimeout(()=>{
         Projects.forEach((project)=> {
@@ -75,7 +82,7 @@ workBtnContainer.addEventListener('click', (e) => {
 
         projectContainer.classList.remove('anim-out');
     },300);
-
+    
 });
 
 // 스크롤 함수설정
