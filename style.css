@@ -57,6 +57,7 @@
         cursor: pointer;
         border: none; 
         outline: none;
+        padding: 0;
     }
     
     /* Typography */
@@ -330,6 +331,7 @@
         border-radius: var(--size-border-radius);
         font-size: var(--font-regular);
         padding: 8px 48px;
+        position: relative;
     }
 
     .category__btn.selected,
@@ -346,9 +348,9 @@
         height: 24px;
         line-height: 24px;
         display: inline-block;
-        position: relative;
+        position: absolute;
         top: -20px;
-        left: 4px;
+        right: 16px;
         opacity: 0;
         transition: all 300ms ease in;
     }
@@ -497,6 +499,9 @@
         
         .navbar__toggle-btn {
             display: block;
+            top: 16px;
+            right: 40px;
+            font-size: medium;
         }
         #navbar {
             flex-direction: column;
@@ -523,6 +528,7 @@
         }
         .section {
             padding: 16px;
+            padding-top: 40px;
         }
 
         .navbar__menu__item {
@@ -541,13 +547,23 @@
             flex-direction: column;
         }
         .category__btn {
-            padding: 8px;
+            margin: 4px 0;
+            width:  100%;
         }
 
         .project {
             /* 화면을 메꿔주는 역할 */
             flex-grow: 1;
         }
+        .arrow-up {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            line-height: 50px;
+            right: 16px;
+            bottom:  16px;
+        }
+
     } 
         
     
