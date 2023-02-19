@@ -115,7 +115,7 @@ const sectionId = ['#home', '#about', '#skills', '#work', '#contact'];
 const sections = sectionId.map((id)=> document.querySelector(id));
 const navItems = sectionId.map((id)=> document.querySelector(`[data-link="${id}"]`));
 
-console.log(sections);
+
 let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];
 function selectNavItem(selected) {
