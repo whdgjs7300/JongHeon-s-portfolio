@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    
     <script src="main.js" defer></script>
         
 </head>
@@ -38,7 +39,6 @@
             <ul class="navbar__menu" >
                 <li class="navbar__menu__item active" data-link="#home">Home</li>
                 <li class="navbar__menu__item" data-link="#about">About Me</li>
-                <li class="navbar__menu__item" data-link="#skills">Skills</li>
                 <li class="navbar__menu__item" data-link="#work">My Work</li>
                 <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>  
@@ -55,8 +55,14 @@
             <img src="imgs/profile.jpg" 
         alt="JongHeon's profile photo"
         class="home__avatar">
-        <h1 class="home__title">반갑습니다, <br> 성장하는 개발자 박종헌입니다</h1>
-        <h2 class="home__discription">독창적인 문장으로 나를 나타내라</h2>
+        <h1 class="home__title">반갑습니다, <br> 집념이 있는 개발자 박종헌입니다</h1>
+        <hr>
+        <h3 class="home__discription">
+            개발자는 끝이 없는 직종이라 생각합니다. 집념을 통한 책임감을 바탕으로 도태되지 않고
+            앞으로 꾸준하게 나아가는 프론트엔드 개발자가 되고 싶습니다. 
+            머무르려고만 한다면 나아갈 수 없습니다. 미래로 가는 과정에서 꾸준히 공부를 하고 익힌
+            다면 스스로 하루하루를 뿌듯하게 보내고 있을 저의 멋진 모습이 상상이 돼, 행복합니다
+        </h3>
         <button class="home__contact" data-link="#contact" >Contact Me</button>
         </div>
     </section>
@@ -66,7 +72,11 @@
     <!-- 설명란(ex: h1,h2,p 등) -->
     <section id="about" class="section section__container">
         <h1>About Me</h1>
-        <p>자기소개 쓰기(나를 잘어필할수있는 문장 ,2~3문장</p>
+        <p> 6개월 정도의 국비지원 훈련기관에서 프론트엔드 개발자 과정을 수료하였고 인터넷 강의, 유튜브 등
+            수많은 자원들로 꾸준한 개발 공부를 지속했습니다. 그 외에도 개발자 커뮤니티를 통해 배우고, 질문하고
+            소통하는 과정을 경험했습니다. 또한 개인 프로젝트와 학습을 반복을 통해 깃 허브 1일 1커밋을 지키려고
+            노력하고 있습니다.
+        </p>
         <div class="about__majors">
             <!-- HTML,CSS -->
             <div class="major">
@@ -127,97 +137,7 @@
         </div>
     </section>
 
-    <!-- Skills --> 
-    <section id="skills" class="section">
-        <div class="section__container">
-            <h1>Skills</h1>
-            <h2>Skills & Attributes</h2>
-            <p>
-                스킬에 대한 부가설명을 쓰시오
-            </p>
-            <!-- 박스구조 파악! -->
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">skills</h3>
-                    <!-- HTML -->
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"
-                            style="width: 99%;"></div>
-                        </div>
-                    </div>
-                    <!-- CSS -->
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"
-                            style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <!-- JS -->
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>js</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"
-                            style="width: 70%;"></div>
-                        </div>
-                    </div>
-                    <!-- React -->
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>React</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"
-                            style="width: 70%;"></div>
-                        </div>
-                    </div> 
-                    <!-- 등등 -->
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>99%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
-                    </div>          
-                </div>
     
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools__list">
-                            <li><span>visual Studio Code</span></li>
-                            <li><span>등</span></li>
-                            <li><span>등</span></li>
-                            <li><span>등</span></li>
-                            <li><span>등</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>git</span></li>
-                            <li><span>git</span></li>
-                            <li><span>git</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section> 
         
         
 
@@ -230,43 +150,50 @@
             <button class="category__btn selected" data-filter="*"> 
                 All <span class="category__count">8</span> 
             </button>
-            <button class="category__btn" data-filter="front-end">
+            <button class="category__btn" data-filter="vanilla-js">
                 Vanilla JS <span class="category__count">3</span> 
             </button>
-            <button class="category__btn" data-filter="back-end">
+            <button class="category__btn" data-filter="react-js">
                 React <span class="category__count">3</span> 
             </button>
-            <button class="category__btn" data-filter="mobile">
-                Mobile <span class="category__count">2</span> 
-            </button>
+            
         </div>  
         <div class="work__projects">
-            <a href="" class="project" target="blank" data-type="front-end" >
+            <a href="https://jongheon-typinggame.netlify.app/" class="project" target="blank" data-type="vanilla-js" >
                 <img src="./imgs/project1.png" alt="제목" class="project__img">
                 <div class="project__description">
-                    <h3>프로젝트 명</h3>  
-                <span>프로젝트 간단한 스텍설명</span>
+                    <h3>TypingGame</h3>  
+                <span>랜덤한 단어를 타이핑하여 점수를 쌓는 게임!</span>                  
+                <h5>사용한 기술</h5>
+                
+                    
                 </div> 
             </a> 
-            <a href="" class="project" target="blank" data-type="front-end" >
+            <a href="" class="project" target="blank" data-type="vanilla-js" >
                 <img src="./imgs/project2.png" alt="제목" class="project__img">
                 <div class="project__description">
                     <h3>프로젝트 명</h3>
                 <span>프로젝트 간단한 스텍설명</span>
                 </div>
             </a>
-            <a href="" class="project" target="blank" data-type="back-end" >
+            <a href="https://pigpenguinman.github.io/TeamB/" class="project" target="blank" data-type="react-js" >
                 <img src="./imgs/project3.png" alt="제목" class="project__img">
                 <div class="project__description">
-                    <h3>프로젝트 명</h3>
-                <span>프로젝트 간단한 스텍설명</span>
+                    <h3>My Doctor (Team project)</h3>
+                <span>
+                    MY DOCTOR는 핸드폰으로 병원예약 또는 관리 , 건강관리를 도와주는 모바일웹입니다
+                    <br>
+                    모바일크기로 제작되어 일반 PC화면크기에는 적합하지않습니다.
+                    </span>
+                    <h5>사용한 기술</h5>
                 </div>
             </a>
-            <a href="" class="project" target="blank" data-type="back-end" >
+            <a href="" class="project" target="blank" data-type="react-js" >
                 <img src="./imgs/project4.png" alt="제목" class="project__img">
                 <div class="project__description">
                     <h3>프로젝트 명</h3>
                 <span>프로젝트 간단한 스텍설명</span>
+                <h5>사용한 가술</h5>
                 </div> 
             </a>
         </div>

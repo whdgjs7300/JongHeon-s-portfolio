@@ -109,7 +109,7 @@ function scrollIntoView(selector) {
 // 2. IntersetionObserver를 이용해서 모든 섹션을 관찰함
 // 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다
 
-const sectionId = ['#home', '#about', '#skills', '#work', '#contact'];
+const sectionId = ['#home', '#about',  '#work', '#contact'];
 
 
 const sections = sectionId.map((id)=> document.querySelector(id));

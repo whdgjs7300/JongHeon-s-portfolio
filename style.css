@@ -162,8 +162,12 @@
         border-radius: 50%;
         border: 2px solid var(--color-light-white);
     }
-    .home__title, .home__discription {
+    .home__title {
         color: var(--color-white);
+    }
+    .home__discription {
+        margin-top: 40px;
+        color: black;
     }
     .home__contact {
         font-size: var(--font-regular);
@@ -325,9 +329,12 @@
         padding: 20px;
     }
     /* Work */ 
-
+    #work {
+        border-top: 2px solid var(--color-blue);
+    }
     .work__categories {
         margin: 40px;
+        
     }
 
     .category__btn {
@@ -383,7 +390,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 280px;
+        width: 350px;
         height: 250px;
         margin: 2px;
         background-color: var(--color-light-white);
@@ -412,6 +419,8 @@
     }
     .project:hover .project__description {
         opacity: 0.8;
+        transform: scale(1.3);
+        z-index: 1;
     }
 
     .project__description h3 {
