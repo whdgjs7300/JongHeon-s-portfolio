@@ -51,18 +51,25 @@
     
     <!-- Home -->
     <section id="home">
-        <div class="home__container">
+        <div >
             <img src="imgs/profile.jpg" 
         alt="JongHeon's profile photo"
         class="home__avatar">
-        <h1 class="home__title">반갑습니다, <br> 집념이 있는 개발자 박종헌입니다</h1>
-        <hr>
-        <h3 class="home__discription">
-            개발자는 끝이 없는 직종이라 생각합니다. 집념을 통한 책임감을 바탕으로 도태되지 않고
-            앞으로 꾸준하게 나아가는 프론트엔드 개발자가 되고 싶습니다. 
-            머무르려고만 한다면 나아갈 수 없습니다. 미래로 가는 과정에서 꾸준히 공부를 하고 익힌
-            다면 스스로 하루하루를 뿌듯하게 보내고 있을 저의 멋진 모습이 상상이 돼, 행복합니다
-        </h3>
+        <div class="home__container">
+            <h1 class="home__title">안녕하십니까 <br> 
+                <div id="slider">
+                    
+                </div>
+                있는 개발자 박종헌입니다</h1>
+            <hr>
+            <h3 class="home__discription">
+                개발자는 끝이 없는 직종이라 생각합니다. 집념을 통한 책임감을 바탕으로 도태되지 않고
+                앞으로 꾸준하게 나아가는 프론트엔드 개발자가 되고 싶습니다. 
+                머무르려고만 한다면 나아갈 수 없습니다. 미래로 가는 과정에서 꾸준히 공부를 하고 익힌
+                다면 스스로 하루하루를 뿌듯하게 보내고 있을 저의 멋진 모습이 상상이 돼, 행복합니다
+            </h3>
+        </div>
+       
         <button class="home__contact" data-link="#contact" >Contact Me</button>
         </div>
     </section>
@@ -163,8 +170,11 @@
                 <img src="./imgs/project1.png" alt="제목" class="project__img">
                 <div class="project__description">
                     <h3>TypingGame</h3>  
-                <span>랜덤한 단어를 타이핑하여 점수를 쌓는 게임!</span>                  
-                <h5>사용한 기술</h5>
+                <span>
+                    게임을 시작할 경우 정해진 시간안에 주어진 단어를 작성하고 점수가 1점씩 쌓이게 되는 게임 ! 
+                    단어를 성공할 때 마다 랜덤으로 새로운 단어가 생기며 시간안에 단어를 작성하지 못하게 되면
+                    게임이 종료가 된 후(점수 초기화) 처음화면으로 돌아오게 된다.</span>                  
+                
                 
                     
                 </div> 
@@ -186,6 +196,7 @@
                     모바일크기로 제작되어 일반 PC화면크기에는 적합하지않습니다.
                     </span>
                     <h5>사용한 기술</h5>
+                    
                 </div>
             </a>
             <a href="" class="project" target="blank" data-type="react-js" >

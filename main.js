@@ -5,6 +5,20 @@ const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 
+const sliderContainer = document.getElementById("slider");
+const words = ["집 념 !", "성 장 !", "성 과 !", "가능성 !"];
+let currentIndex = 0;
+
+function slideWords() {
+    sliderContainer.innerHTML = `<p>${words[currentIndex]}</p>`;
+    currentIndex = (currentIndex + 1) % words.length;
+  setTimeout(slideWords, 1500); // 2
+}
+
+slideWords();
+
+
+
 document.addEventListener('scroll', () => {
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');

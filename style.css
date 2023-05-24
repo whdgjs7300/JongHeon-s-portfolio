@@ -155,7 +155,12 @@
         padding-top: 120px;
         text-align: center;
     }
-
+    .home__container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
     .home__avatar {
         width: 250px;
         height: 250px;
@@ -180,6 +185,24 @@
     }
     .home__contact:hover {
         background-color: var(--color-dark-blue);
+    }
+
+    #slider {
+        margin: auto;
+        
+        width: 200px;
+        height: 60px;
+        
+        background-color: var(--color-white);
+        overflow: hidden;
+    }
+    
+    #slider p {
+        font-weight: var(--weight-bold);
+        font-size: var(--font-large);
+        line-height: 50px;
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
     }
 
     /* Section */
