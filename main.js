@@ -12,7 +12,7 @@ let currentIndex = 0;
 function slideWords() {
     sliderContainer.innerHTML = `<p>${words[currentIndex]}</p>`;
     currentIndex = (currentIndex + 1) % words.length;
-  setTimeout(slideWords, 1500); // 2
+    setTimeout(slideWords, 1500); 
 }
 
 slideWords();
