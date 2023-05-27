@@ -4,7 +4,7 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
-
+// 슬라이더
 const sliderContainer = document.getElementById("slider");
 const words = ["집 념 !", "성 장 !", "성 과 !", "가능성 !"];
 let currentIndex = 0;
