@@ -452,10 +452,12 @@
         
     }
 
-    .project__description h3 {
+    .project__description h3,
+    .project__description h4 {
         color: var(--color-orange);
     }
-    .project__description h3::after {
+    .project__description h3::after,
+    .project__description span::after {
         content: '';
         position: relative;
         left: 50%;
