@@ -55,12 +55,13 @@ homeContactBtn.addEventListener('click', ()=> {
 });
 
 // Home 화면을 스크롤 했을 때 점점 투명해짐
+/* 
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
-    home.style.opacity = 1-window.scrollY / homeHeight;
-})
+    home.style.opacity = 1-window.scrollY / homeHeight; 
+}) */
 
 // 버튼 올리기 -스크롤시
 const arrowUp = document.querySelector('.arrow-up')
