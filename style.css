@@ -563,11 +563,6 @@
             margin-right: 36px;
         }
 
-        .about__majors {
-            flex-direction: column;
-            margin-top: 30px;
-            margin-bottom: 0px;
-        }
         .major {
             margin-bottom: 38px;
         }
